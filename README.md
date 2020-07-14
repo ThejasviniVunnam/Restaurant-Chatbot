@@ -1,29 +1,29 @@
 1. Pre-requisites
-     - Please refer requirements.txt file under casestudy folder
+     - Please refer requirements.txt file
 
 2. Repo Information
 
    Data Files
-         - data/data.json : contains training examples for the NLU model
-         - data/stories.md : contains training stories for the Core model
+         1. data/data.json : contains training examples for the NLU model
+         2. data/stories.md : contains training stories for the Core model
   Model File
-         - contains trained (.tar) file
+         1. contains trained (.tar) file
    Script Files
-         - zomatopy : contains Zomato API integration code
-         - actions : contains the following custom actions (insert ZOMATO API key in this script file before starting RASA server)
-	-- search restaurant
-	-- validate location
-	-- validate cuisine
-	-- send email
-	-- action restart
-	-- reset slots
+         1. zomatopy : contains Zomato API integration code
+         2. actions : contains the following custom actions (insert ZOMATO API key in this script file before starting RASA server)
+		1. search restaurant
+		2. validate location
+		3. validate cuisine
+		4. send email
+		5. action restart
+		6. reset slots
    Config Files
-         - config.yml contains model configuration and custom policy
-         - credentials.yml contains authentication token to connect with channels like slack
-         - domain.yml defines chatbot domain like intents, entities, slots, templates, actions
-         - endpoints.yml contains the webhook configuration for custom action
-         - smtpconfig.txt contains SMTP server configuration information( for sending emails)
-         - cities.json contains list of Tier 1 and 2 cities
+         1. config.yml contains model configuration and custom policy
+         2. credentials.yml contains authentication token to connect with channels like slack
+         3. domain.yml defines chatbot domain like intents, entities, slots, templates, actions
+         4. endpoints.yml contains the webhook configuration for custom action
+         5. smtpconfig.txt contains SMTP server configuration information( for sending emails)
+         6. cities.json contains list of Tier 1 and 2 cities
 
 3. Steps to run the chatbot on command prompt
 
