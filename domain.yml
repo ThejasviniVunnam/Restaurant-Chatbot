@@ -1,0 +1,123 @@
+intents:
+ - greet
+ - affirm
+ - deny
+ - goodbye
+ - send_email
+ - restaurant_search
+
+entities:
+- location
+- cuisine
+- email
+- budget
+
+slots:
+  location:
+    type: text
+  location_match:
+    type: categorical
+    values:
+    - valid
+    - invalid
+  cuisine:
+    type: text
+  cuisine_validity:
+    type: categorical
+    values:
+    - valid
+    - invalid
+  budget:
+    type: text
+  email:
+    type: text
+  email_body:
+    type: text
+  search_validity:
+    type: categorical
+    values:
+    - valid
+    - invalid
+
+responses:
+  utter_greet:
+  - text: "hey there! How may i help you"
+  - text: "Hi, How can I help you!"
+  
+  utter_goodbye:
+  - text: "Bye-bye"
+  - text: "bye have a nice day"
+  - text: "See you soon"
+  
+  utter_ask_location:
+  - text: "In what location?"
+
+  utter_ask_cuisine:
+  - text: "What kind of cuisine would you like?"
+    buttons:
+    - title: "Chinese"
+      payload: "Chinese"
+    - title: "Mexican"
+      payload: "Mexican"
+    - title: "Italian"
+      payload: "Italian"
+    - title: "American"
+      payload: "American"
+    - title: "South Indian"
+      payload: "South Indian"
+    - title: "North Indian"
+      payload: "North Indian"
+
+  utter_ask_budget: 
+  - text: "What's the average budget for two people?"
+    buttons:
+    - title: "Lesser than Rs. 300"
+      payload: "Lesser than Rs. 300"
+    - title: "Rs. 300 to 700"
+      payload: "Rs. 300 to 700"
+    - title: "More than Rs. 700"
+      payload: "More than Rs. 700"
+
+  utter_location_not_found:
+  - text: "Sorry, we don’t operate in this city or we didn't find any such location. Try to specify a different location. \n"
+  
+  utter_cuisine_invalid:
+  - text: "Sorry. We do not serve the requested cuisine. Choose a different cuisine. \n"
+  
+  utter_searching:
+  - text: "Please wait, let me find some good rating restaurants for you... \n"
+  
+  utter_ask_for_email_to_send:
+  - text: "Should I send you details of all the restaurants on email? \n"
+  
+  utter_ask_email_address:
+  - text: "To what email id should I send it to ? \n"
+  
+  utter_email_sent:
+  - text: "An email has been sent to you. Bon Appetit!"
+  
+  utter_no_email_sent:
+  - text: "GoodBye. Enjoy your food!"
+  
+  utter_search_invalid:
+  - text: "Sorry, we do not have any restaurants which match your preferences. Please search in some other budget range. Hope to serve you better next time!"
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_ask_location
+- utter_ask_cuisine
+- utter_ask_budget
+- utter_ask_for_email_to_send
+- utter_ask_email_address
+- utter_email_sent
+- utter_no_email_sent
+- utter_searching
+- utter_location_not_found
+- utter_cuisine_invalid
+- utter_search_invalid
+- action_restaurant
+- action_check_location
+- action_cuisine_valid
+- action_restart
+- action_send_email
