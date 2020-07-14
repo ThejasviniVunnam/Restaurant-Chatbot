@@ -15,7 +15,7 @@ import zomatopy
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("__name__")
-config = {"user_key": "23a38ebd5702a7eb3fd53fd640fe66aa"}
+config = {"user_key": "Give zomato api here"}
 zomato = zomatopy.initialize_app(config)
 email_message=""
 
