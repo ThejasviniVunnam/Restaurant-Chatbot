@@ -1,0 +1,5 @@
+smtpserver_host=smtp.gmail.com
+smtpserver_port=465
+username=app4foodie@gmail.com
+password=aforf@123
+from_email=app4foodie@gmail.com
