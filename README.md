@@ -3,12 +3,12 @@
 
 2. Repo Information
 
-   Data Files
+1. Data Files
          1. data/data.json : contains training examples for the NLU model
          2. data/stories.md : contains training stories for the Core model
-  Model File
+2. Model File
          1. contains trained (.tar) file
-   Script Files
+3. Script Files
          1. zomatopy : contains Zomato API integration code
          2. actions : contains the following custom actions (insert ZOMATO API key in this script file before starting RASA server)
 		1. search restaurant
@@ -17,7 +17,7 @@
 		4. send email
 		5. action restart
 		6. reset slots
-   Config Files
+4. Config Files
          1. config.yml contains model configuration and custom policy
          2. credentials.yml contains authentication token to connect with channels like slack
          3. domain.yml defines chatbot domain like intents, entities, slots, templates, actions
