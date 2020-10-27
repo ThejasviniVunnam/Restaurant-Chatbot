@@ -27,7 +27,7 @@ colorhash==1.0.2
 ConfigArgParse==0.13.0
 constantly==15.1.0
 contextvars==2.4
-cryptography==2.9.2
+cryptography==3.2
 cycler==0.10.0
 cymem==2.0.3
 decorator==4.4.2
